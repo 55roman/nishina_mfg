@@ -83,7 +83,8 @@ class Common
   # Site Common ###############################
   initSiteCommon: ()=>
     @initHeader()
-    @initPhoneArea()
+    if(@isSP)
+      @initPhoneArea()
 
 
 
@@ -133,10 +134,9 @@ class Common
     @$phoneTrigger = $("#phone-trigger")
     @$phoneContent = $("#phone-content")
     @$phoneTrigger.bind("click", @togglePhoneArea)
-
     phoneCookie = $.cookie("PHONE_OPEN")
-    console.log(phoneCookie)
-    if($.cookie("PHONE_OPEN")=="FALSE")
+
+    if(phoneCookie=="FALSE")
       @phoneIsOpen = false
       @setPhoneArea()
     else
@@ -148,7 +148,6 @@ class Common
     @setPhoneArea()
 
   setPhoneArea: ()=>
-    console.log(@phoneIsOpen)
     if(!@phoneIsOpen) #閉じる
       @$phoneContent.css({"display": "none"})
       @$phoneTrigger.addClass("phone-close")

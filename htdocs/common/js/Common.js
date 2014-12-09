@@ -102,7 +102,9 @@ Common = (function() {
 
   Common.prototype.initSiteCommon = function() {
     this.initHeader();
-    return this.initPhoneArea();
+    if (this.isSP) {
+      return this.initPhoneArea();
+    }
   };
 
   Common.prototype.initHeader = function() {
@@ -172,8 +174,7 @@ Common = (function() {
     this.$phoneContent = $("#phone-content");
     this.$phoneTrigger.bind("click", this.togglePhoneArea);
     phoneCookie = $.cookie("PHONE_OPEN");
-    console.log(phoneCookie);
-    if ($.cookie("PHONE_OPEN") === "FALSE") {
+    if (phoneCookie === "FALSE") {
       this.phoneIsOpen = false;
       return this.setPhoneArea();
     } else {
@@ -188,7 +189,6 @@ Common = (function() {
   };
 
   Common.prototype.setPhoneArea = function() {
-    console.log(this.phoneIsOpen);
     if (!this.phoneIsOpen) {
       this.$phoneContent.css({
         "display": "none"

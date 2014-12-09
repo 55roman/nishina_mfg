@@ -14,7 +14,7 @@
 			</div>
 		</div>
 		<div class="footer-logo">
-			<img src="/common/img/footer_logo.gif" alt="関西電力" />
+			<img src="<?php echo $rel ?>common/img/footer_logo.gif" alt="関西電力" width="70" height="18" />
 		</div>
 	</div>
 </footer>

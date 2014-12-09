@@ -192,12 +192,12 @@ $mspan: 5;
 
 
 ::selection {
-	background: $col_key;
+	background: $col_key_light2;
 	/* Safari */
 }
 
 ::-moz-selection {
-	background: $col_key;
+	background: $col_key_light2;
 }
 
 .notice {

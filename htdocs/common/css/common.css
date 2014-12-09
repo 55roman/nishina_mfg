@@ -670,12 +670,12 @@ object {
 /* //////////////////////////////////////////////////////////// Utility */
 /* = Selected Text */
 ::selection {
-  background: #56bca3;
+  background: #e2efec;
   /* Safari */
 }
 
 ::-moz-selection {
-  background: #56bca3;
+  background: #e2efec;
 }
 
 .notice {

@@ -12,6 +12,7 @@ if($_SERVER["QUERY_STRING"]!=""){
 <meta name="description" content="<?php echo ($pageDescription!="") ? $pageDescription : $META_DESCRIPTION ?>" />
 <link rel="SHORTCUT ICON" href="/favicon.ico" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="format-detection" content="telephone=no">
 <meta property="og:title" content="<?php echo ($pageOgTitle != "") ? $pageOgTitle : $META_TITLE; ?>" />
 <meta property="og:type" content="<?php echo ($pageOgType!="") ? $pageOgType : $META_OG_TYPE; ?>" />
 <meta property="og:site_name" content="<?php echo ($pageTitle!="") ? $pageTitle : $META_TITLE; ?>" />
@@ -33,6 +34,6 @@ if($_SERVER["QUERY_STRING"]!=""){
 <!--<link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>-->
 <link href='http://fonts.googleapis.com/css?family=Cantata+One|EB+Garamond' rel='stylesheet' type='text/css'>
 
-<!--[if lt IE 9]><script src="/common/js/fix/html5shiv.js"></script><![endif]-->
-<!--[if lt IE 9]><script src="/common/js/fix/respond.min.js"></script><![endif]-->
-<!--[if lt IE 9]><script src="/common/js/fix/selectivizr.min.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="<?php echo $rel ?>common/js/fix/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="<?php echo $rel ?>common/js/fix/respond.min.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="<?php echo $rel ?>common/js/fix/selectivizr.min.js"></script><![endif]-->
