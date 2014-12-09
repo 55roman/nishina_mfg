@@ -8,8 +8,8 @@
 			</h1>
 			<nav class="unav">
 				<ul>
-					<li><a href=""><img src="<?php echo $rel ?>common/img/header_unav_sitemap.gif" alt="サイトマップ" /></a></li>
-					<li class="mr20"><a href=""><img src="<?php echo $rel ?>common/img/header_unav_en.gif" alt="ENGLISH" /></a></li>
+					<li><a href="http://www.kepco.co.jp/siteinfo/sitemap/"><img src="<?php echo $rel ?>common/img/header_unav_sitemap.gif" alt="サイトマップ" /></a></li>
+					<li class="mr20"><a href="http://www.kepco.co.jp/english/"><img src="<?php echo $rel ?>common/img/header_unav_en.gif" alt="ENGLISH" /></a></li>
 					<li>Google カスタム検索
 						<gcse:searchbox-only></gcse:searchbox-only></li>
 				</ul>

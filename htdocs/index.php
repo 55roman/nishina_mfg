@@ -74,7 +74,7 @@
 						お客さまには、昨年来、節電に多大なるご協力を賜り、大変なご不便とご迷惑をおかけしておりますことに加え、厳しい経済情勢の中、電気料金の値上げにより、お客さまの生活や産業活動に多大なるご負担をおかけすることとなり、誠に申し訳なく、深くお詫び申し上げます。
 					</p>
 					<div class="mat-key text-c">
-						<div class="link-btn w200"><a href="greeting.html">ごあいさつ</a></div>
+						<div class="link-btn w200"><a href="goaisatsu/">ごあいさつ</a></div>
 					</div>
 				</div>
 			</div>
@@ -86,10 +86,10 @@
 					<div class="border-a round-a heightLine-g1">
 						<h3><span class="inner">値上げ申請に関するご説明</span></h3>
 						<ul class="list-def mt30 mb30">
-							<li><div class="link-btn"><a href="">値上げ申請の内容</a></div></li>
-							<li><div class="link-btn"><a href="">値上げ申請の理由</a></div></li>
-							<li><div class="link-btn"><a href="">各種ご契約メニューの申請内容</a></div></li>
-							<li><div class="link-btn"><a href="">その他変更内容</a></div></li>
+							<li><div class="link-btn"><a href="setsumei/naiyou/">値上げ申請の内容</a></div></li>
+							<li><div class="link-btn"><a href="setsumei/riyuu/">値上げ申請の理由</a></div></li>
+							<li><div class="link-btn"><a href="setsumei/menu/">各種ご契約メニューの申請内容</a></div></li>
+							<li><div class="link-btn"><a href="setsumei/sonota/">その他変更内容</a></div></li>
 						</ul>
 					</div>
 				</div>
@@ -113,15 +113,16 @@
 				<div class="row-2">
 					<div class="col1 col-2 w60p round-a mt30 mb30">
 						<ul class="list-il mt30 mb20 ml20">
-							<li><div class="link-btn w220"><a href="">申請する単価一覧</a></div></li>
-							<li><div class="link-btn w220"><a href="">ご質問にお答えします</a></div></li>
-							<li><div class="link-btn w220"><a href="">値上げに関する資料</a></div></li>
-							<li><div class="link-btn w220"><a href="">電気料金節約のご案内</a></div></li>
+							<li><div class="link-btn w220"><a href="tanka/">申請する単価一覧</a></div></li>
+							<li><div class="link-btn w220"><a href="shiryou/">ご質問にお答えします</a></div></li>
+							<li><div class="link-btn w220"><a href="sitsumon/">値上げに関する資料</a></div></li>
+							<li><div class="link-btn w220"><a href="setsuyaku/">電気料金節約のご案内</a></div></li>
 						</ul>
 					</div>
 					<div class="col2 col-2 w40p mt30 last-2">
 						<ul class="list-il">
-							<li><a href=""><img src="img/index_sec03_bn01.jpg" alt="電気料金シミュレーション" /></a></li><li><a href=""><img src="img/index_sec03_bn02.jpg" alt="関西電力の取り組み" /></a></li>
+							<li><a href="simulation/"><img src="img/index_sec03_bn01.jpg" alt="電気料金シミュレーション" /></a></li>
+							<li><a href="torikumi/"><img src="img/index_sec03_bn02.jpg" alt="関西電力の取り組み" /></a></li>
 						</ul>
 					</div>
 
