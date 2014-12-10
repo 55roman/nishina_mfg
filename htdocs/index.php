@@ -55,11 +55,11 @@
 		<div class="main-text-area mt40">
 			<div class="text1"><img src="img/index_main_text01.png" alt="電気料金の値上げ申請に関するお詫びとお知らせ" /></div>
 			<div class="text2 mt40">
-				<p>お客さまには、昨年４月に続き２年続けての値上げになり<br />
-				ご負担をお願いいたしますことに深くお詫び申し上げます。</p>
+				<p>お客さまには、昨年４月に続き<span class="br">２年続けての値上げになり</span><br />
+				ご負担をお願いいたしますことに<span class="br">深くお詫び申し上げます。</span></p>
 			</div>
 			<div class="text3 mt10">
-				<a href="" class="arrow-a-r font-m1">法人のお客さまはこちらをご覧ください</a>
+				<a href="../business/" class="arrow-a-r font-m1">法人のお客さまはこちらをご覧ください</a>
 			</div>
 		</div>
 
@@ -74,7 +74,7 @@
 						お客さまには、昨年来、節電に多大なるご協力を賜り、大変なご不便とご迷惑をおかけしておりますことに加え、厳しい経済情勢の中、電気料金の値上げにより、お客さまの生活や産業活動に多大なるご負担をおかけすることとなり、誠に申し訳なく、深くお詫び申し上げます。
 					</p>
 					<div class="mat-key text-c">
-						<div class="link-btn w200"><a href="goaisatsu/">ごあいさつ</a></div>
+						<div class="link-btn w150"><a href="goaisatsu/">ごあいさつ</a></div>
 					</div>
 				</div>
 			</div>
@@ -98,7 +98,7 @@
 					<div class="border-a round-a heightLine-g1">
 						<h3><span class="inner">値上げ申請の概要を映像でご確認いただけます</span></h3>
 						<div id="top-mov">
-							<img src="dmmy/dm_top_mov.jpg" width="100%" alt="" />
+							<img src="dmmy/dm_top_mov.jpg" alt="" />
 						</div>
 						<div class="text-c font-m2 mt5 mb5">
 							値上げ申請の概要
@@ -112,12 +112,14 @@
 			<div class="sec03 content">
 				<div class="row-2">
 					<div class="col1 col-2 w60p round-a mt30 mb30">
-						<ul class="list-il mt30 mb20 ml20">
-							<li><div class="link-btn w220"><a href="tanka/">申請する単価一覧</a></div></li>
-							<li><div class="link-btn w220"><a href="shiryou/">ご質問にお答えします</a></div></li>
-							<li><div class="link-btn w220"><a href="sitsumon/">値上げに関する資料</a></div></li>
-							<li><div class="link-btn w220"><a href="setsuyaku/">電気料金節約のご案内</a></div></li>
-						</ul>
+						<div class="inner">
+							<ul class="list-il">
+								<li><div class="link-btn"><a href="tanka/">申請する単価一覧</a></div></li>
+								<li><div class="link-btn"><a href="shiryou/">ご質問にお答えします</a></div></li>
+								<li><div class="link-btn"><a href="sitsumon/">値上げに関する資料</a></div></li>
+								<li><div class="link-btn"><a href="setsuyaku/">電気料金節約のご案内</a></div></li>
+							</ul>
+						</div>
 					</div>
 					<div class="col2 col-2 w40p mt30 last-2">
 						<ul class="list-il">

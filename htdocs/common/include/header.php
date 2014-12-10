@@ -1,4 +1,6 @@
+
 <header id="pc">
+	<div id="print-h1"><img src="<?php echo $rel ?>common/img/print_header_logo.gif" width="134" height="24" alt="関西電力" /></div>
 	<div class="header-inner">
 		<div class="upper cf">
 			<h1>
@@ -9,8 +11,12 @@
 			<nav class="unav">
 				<ul>
 					<li><a href="http://www.kepco.co.jp/siteinfo/sitemap/"><img src="<?php echo $rel ?>common/img/header_unav_sitemap.gif" alt="サイトマップ" /></a></li>
-					<li class="mr20"><a href="http://www.kepco.co.jp/english/"><img src="<?php echo $rel ?>common/img/header_unav_en.gif" alt="ENGLISH" /></a></li>
-					<li>Google カスタム検索
+					<li><a href="http://www.kepco.co.jp/english/"><img src="<?php echo $rel ?>common/img/header_unav_en.gif" alt="ENGLISH" /></a></li>
+					<li><img src="<?php echo $rel ?>common/img/header_unav_txtsize.gif" alt="文字サイズ" /></li>
+					<li>小</li>
+					<li>中</li>
+					<li>大</li>
+					<li class="ml15">Google カスタム検索
 						<gcse:searchbox-only></gcse:searchbox-only></li>
 				</ul>
 			</nav>

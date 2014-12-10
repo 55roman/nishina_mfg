@@ -28,11 +28,9 @@ if($_SERVER["QUERY_STRING"]!=""){
 <script src="<?php echo $rel ?>common/js/jquery.cookie.js"></script>
 
 
-<!--<link rel="stylesheet" type="text/css" media="all" href="<?php /*echo $rel */?>common/css/reset.css" />-->
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo $rel ?>common/css/common.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo $rel ?>common/css/content.css" />
-<!--<link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>-->
-<link href='http://fonts.googleapis.com/css?family=Cantata+One|EB+Garamond' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" media="print" href="<?php echo $rel ?>common/css/print.css" />
 
 <!--[if lt IE 9]><script src="<?php echo $rel ?>common/js/fix/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="<?php echo $rel ?>common/js/fix/respond.min.js"></script><![endif]-->

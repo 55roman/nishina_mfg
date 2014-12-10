@@ -7,6 +7,13 @@ $BIZ = "biz";
 $KANDEN = "kanden";
 //$content(コンテンツナビ)
 $INDEX = "index";
+$GOAISATSU = "goaisatsu";
+$SETSUMEI = "setsumei";
+$TANKA = "tanka";
+$SHITSUMON = "shitsumon";
+$SETSUYAKU = "setsuyaku";
+$SIMULATION = "simulation";
+$SHIRYOU = "shiryou";
 
 
 //共通META設定

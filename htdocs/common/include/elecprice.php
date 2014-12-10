@@ -2,19 +2,19 @@
 	<div class="phone-inner">
 		<div class="sp-phone">
 			<div id="phone-trigger" class="phone-tit label lh-12">電気料金お問い合わせ専用ダイヤル</div>
-			<span class="font-p3 num"><a href="tel:0120984315">0120-984-315</a></span><br /><span class="font-m2">（通話料無料）</span>
+			<span class="font-p3 num"><a href="tel:0120984315">0120-984-315</a></span><br /><span class="font-m2 br">（通話料無料）</span>
 		</div>
 		<div id="phone-content">
 			<div class="row-2">
 				<div class="col-2">
 					<div class="phone">
 						<span class="label lh-12">電気料金お問い合わせ専用ダイヤル</span><br/>
-						<span class="font-p3 num"><a href="tel:0120984315">0120-984-315</a></span><span class="font-m2">（通話料無料）</span>
+						<span class="font-p3 num"><a href="tel:0120984315">0120-984-315</a></span><span class="font-m2 br">（通話料無料）</span>
 					</div>
 
 					<div class="fax">
 						<span class="label">ＦＡＸによるお問い合わせも承っております。</span><br/>
-						<span class="font-p1">0120-984-700</span><span class="font-m2">（通信料無料）</span>
+						<span class="font-p1">0120-984-700</span><span class="font-m2 br">（通信料無料）</span>
 					</div>
 				</div>
 				<div class="col-2 last-2">
