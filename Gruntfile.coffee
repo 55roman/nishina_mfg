@@ -4,12 +4,13 @@ module.exports = (grunt)->
   #grunt.loadNpmTasks('grunt-concat-sourcemap')
 
   appConfig = {
-    host: '0.0.0.0'
+    host: 'localhost'
     #host: '192.168.0.3'
     #host: 'http://192.168.0.3/'
     src: 'src'
     dist: 'htdocs'
     port: '8510'
+    type: 'kojin'
     #port: '10004'
   }
 
@@ -25,11 +26,11 @@ module.exports = (grunt)->
 
     compass:
       options:
-        sassDir: '<%= cfg.src %>/sass/'
-        imageDir: '<%= cfg.src %>/img/'
-        cssDir: '<%= cfg.dist %>/common/css/'
-        generatedImagesDir: '<%= cfg.dist %>/common/css/img/'
-        javascriptDir: '<%= cfg.src %>/scripts/'
+        sassDir: '<%= cfg.src %>/sass/<%= cfg.type %>/'
+        imageDir: '<%= cfg.src %>/img/<%= cfg.type %>/'
+        cssDir: '<%= cfg.dist %>/<%= cfg.type %>/common/css/'
+        generatedImagesDir: '<%= cfg.dist %>/<%= cfg.type %>/common/css/img/'
+        javascriptDir: '<%= cfg.dist %>/<%= cfg.type %>/scripts/'
         importPath: 'bower_components'
         relativeAssets: true
         debugInfo: false
@@ -43,9 +44,9 @@ module.exports = (grunt)->
       compile:
         files:[
           expand:true
-          cwd: '<%= cfg.src %>/scripts/'
-          src: ['**/*.coffee']
-          dest: '<%= cfg.dist %>/common/js/'
+          cwd: '<%= cfg.src %>/scripts/<%= cfg.type %>/'
+          src: ['*.coffee']
+          dest: '<%= cfg.dist %>/<%= cfg.type %>/common/js/'
           ext: '.js'
         ]
       options:
