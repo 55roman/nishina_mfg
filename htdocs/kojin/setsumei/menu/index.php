@@ -50,7 +50,7 @@
 		<?php include_once "header.php" ?>
 	</div>
 
-
+	<?php include_once "title.php" ?>
 	<div class="content-wrapper">
 
 		<nav id="content-nav">
@@ -64,14 +64,14 @@
 
 			<ul class="tab-menu mt30">
 				<li><a href="../naiyou/">値上げ申請<span class="br">の内容</span></a></li>
-				<li><a href="../riyuu/">値上げ申請<span class="br">の理由</span></a></li>
+				<li><a href="../haikei/">値上げ申請<span class="br">の背景</span></a></li>
 				<li class="crnt">各種ご契約メニュー<span class="br">の申請内容</span></li>
-				<li><a href="../sonota/">その他<span class="br">変更内容</span></a></li>
+				<li><a href="../sonota/">その他の<span class="br">変更内容</span></a></li>
 			</ul>
 
 			<p>各種ご契約メニューのご説明と、現行単価と申請（届出予定）単価の比較および値上げ影響額をご覧いただけます。</p>
 			<div class="mat-key text-c">
-				<div class="link-btn pl20 pr20"><a href="#">ご契約メニューのご確認方法</a></div>
+				<div class="link-btn pl20 pr20"><a href="../../simulation/kakunin.php" target="_blank">ご契約メニューのご確認方法</a></div>
 			</div>
 
 			<div class="mt30 menu-sec01 border-a round-a">
@@ -115,12 +115,12 @@
 					<div class="mt10 font-m2 lh-14">ご契約メニューでの現行料金と申請料金の差額を試算できます。</div>
 				</div>
 				<div class="col-2 last-2">
-					<a href="../../tanka/"><img src="img/index_btn_tanka.jpg" alt="申請単価一覧表"/></a>
-					<div class="mt10 font-m2 lh-14">現行単価と申請単価を比較していただけます。</div>
+					<a href="../../tanka/"><img src="img/index_btn_tanka.jpg" alt="申請中単価一覧表"/></a>
+					<div class="mt10 font-m2 lh-14">現行単価と申請中単価を比較していただけます。</div>
 				</div>
 			</div>
 
-			<?php include_once "elecprice_u.php" ?>
+			<?php include_once "phonearea.php" ?>
 		</div>
 
 	</div>

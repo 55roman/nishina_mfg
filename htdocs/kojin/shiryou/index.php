@@ -50,7 +50,7 @@
 		<?php include_once "header.php" ?>
 	</div>
 
-
+	<?php include_once "title.php" ?>
 	<div class="content-wrapper">
 
 		<nav id="content-nav">
@@ -60,60 +60,43 @@
 
 		<div id="local-content">
 
-			<h2><span class="inner">電気料金値上げに関する資料</span></h2>
+			<h2><span class="inner">電気料金の値上げ申請に関する資料</span></h2>
 
 			<h4 class="mt40">お客さま用パンフレット、チラシ</h4>
 			<div class="row-3">
 				<div class="col-3">
-					<a href="">
+					<a href="data/pdf_kisei.pdf">
 						<div class="mat-key heightLine-g1 text-c pt20">
-							<div style="display: inline-block; background: #ddd; width: 100%; height: 180px;">dummy</div>
+							<img src="img/index_thumb_kisei.jpg" alt="" />
 						</div>
 						<div class="mt10 text-c font-m1 lh-14">
 							電気料金の値上げ申請について<br />
-							＜パンフレット＞
+							＜規制部門＞
 						</div>
 					</a>
 				</div>
 				<div class="col-3">
-					<a href="">
+					<a href="data/pdf_jiyuu.pdf">
 						<div class="mat-key heightLine-g1 text-c pt20">
-							<div style="display: inline-block; background: #ddd; width: 100%; height: 120px;">dummy</div>
+							<img src="img/index_thumb_jiyuu.jpg" alt=""/>
 						</div>
 						<div class="mt10 text-c font-m1 lh-14">
 							電気料金の値上げ申請について<br/>
-							＜パンフレット＞
+							＜自由化部門＞
 						</div>
 					</a>
 				</div>
 				<div class="col-3 last-3">
 					<a href="">
-						<div class="mat-key heightLine-g1 text-c pt20">
-							<div style="display: inline-block; background: #ddd; width: 100%; height: 180px;">dummy</div>
-						</div>
-						<div class="mt10 text-c font-m1 lh-14">
-							電気料金の値上げ申請について<br/>
-							＜パンフレット＞
-						</div>
-					</a>
-				</div>
-				<div class="col-3 mt30">
-					<a href="">
-						<div class="mat-key heightLine-g1 text-c pt20">
-							<div style="display: inline-block; background: #ddd; width: 100%; height: 180px;">dummy</div>
-						</div>
-						<div class="mt10 text-c font-m1 lh-14">
-							電気料金の値上げ申請について<br/>
-							＜パンフレット＞
-						</div>
+
 					</a>
 				</div>
 			</div>
 
-			<h4 class="mt40">審査委員会への提出資料</h4>
 
 
-			<?php include_once "elecprice_u.php" ?>
+
+			<?php include_once "phonearea.php" ?>
 		</div>
 
 	</div>

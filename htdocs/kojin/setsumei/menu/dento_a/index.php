@@ -63,10 +63,10 @@
 			<h2><span class="inner">値上げ申請に関するご説明</span></h2>
 
 			<ul class="tab-menu mt30">
-				<li><a href="../menu/">値上げ申請<span class="br">の内容</span></a></li>
-				<li><a href="../riyuu/">値上げ申請<span class="br">の理由</span></a></li>
+				<li><a href="../../menu/">値上げ申請<span class="br">の内容</span></a></li>
+				<li><a href="../../haikei/">値上げ申請<span class="br">の背景</span></a></li>
 				<li class="crnt">各種ご契約メニュー<span class="br">の申請内容</span></li>
-				<li><a href="../sonota/">その他<span class="br">変更内容</span></a></li>
+				<li><a href="../../sonota/">その他の<span class="br">変更内容</span></a></li>
 			</ul>
 
 
@@ -80,7 +80,7 @@
 			</div>
 
 
-			<?php include_once "elecprice_u.php" ?>
+			<?php include_once "phonearea.php" ?>
 		</div>
 
 	</div>

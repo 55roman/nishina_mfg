@@ -104,7 +104,7 @@ a:hover, a:active {
 
 /* //////////////////////////////////////////////////////////// fontsize */
 p, li, dt, dd, th, td {
-  line-height: 1.75em;
+  line-height: 1.6em;
 }
 
 p, h1, h2, h3, h4, li {
@@ -112,7 +112,7 @@ p, h1, h2, h3, h4, li {
 }
 
 p {
-  margin-bottom: 1em;
+  margin-bottom: 0.75em;
 }
 
 /* //////////////////////////////////////////////////////////// Base */

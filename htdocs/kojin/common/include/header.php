@@ -25,7 +25,7 @@
 					<div class="inner nav-ind">
 					<a<?php if ($g_content == $IND) {
 						echo ' class="crnt"';
-					} ?> href="/kojin/">
+					} ?> href="http://www.kepco.co.jp/home/">
 						<img src="<?php echo $rel ?>common/img/header_nav_label_ind.png" alt="個人のお客さま"/>
 					</a>
 					</div>
@@ -35,7 +35,7 @@
 					<div class="inner nav-biz">
 					<a<?php if ($g_content == $BIZ) {
 						echo ' class="crnt"';
-					} ?> href="/business/">
+					} ?> href="http://www.kepco.co.jp/business/">
 						<img src="<?php echo $rel ?>common/img/header_nav_label_biz.png" alt="法人のお客さま"/>
 					</a>
 					</div>
@@ -79,18 +79,19 @@
 	<div id="dd-menu-container">
 	<nav id="dd-menu">
 		<ul class="dd-level1">
+			<li><a href="<?php echo $rel ?>">トップ</a></li>
 			<li><a href="<?php echo $rel ?>goaisatsu/">ごあいさつ</a></li>
 			<li><a href="<?php echo $rel ?>setsumei/naiyou/">値上げ申請に関するご説明</a></li>
 			<li><a href="<?php echo $rel ?>tanka/">申請(届出予定)単価一覧</a></li>
-			<li><a href="<?php echo $rel ?>shitsumon/">ご質問にお答えします</a></li>
+			<li><a href="<?php echo $rel ?>shitsumon/">ご質問にお答えいたします</a></li>
 			<li><a href="<?php echo $rel ?>setsuyaku/">電気料金節約のご案内</a></li>
 			<li><a href="<?php echo $rel ?>simulation/">電気料金シミュレーション</a></li>
 			<li><a href="<?php echo $rel ?>shiryou/">電気料金の値上げに関する資料</a></li>
 			<li class="activity"><a href="<?php echo $rel ?>torikumi/">関西電力の取り組み</a></li>
 		</ul>
 		<ul class="dd-level2">
-			<li class="ind"><a href="/kojin/">個人のお客様</a></li>
-			<li class="biz"><a href="/business/">法人のお客様</a></li>
+			<li class="ind"><a href="http://www.kepco.co.jp/home/">個人のお客さま</a></li>
+			<li class="biz"><a href="http://www.kepco.co.jp/business/">法人のお客さま</a></li>
 			<li><a href="http://www.kepco.co.jp/siteinfo/sitemap/">サイトマップ</a></li>
 			<li><a href="http://www.kepco.co.jp/english/">English</a></li>
 		</ul>

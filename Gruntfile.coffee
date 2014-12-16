@@ -11,7 +11,8 @@ module.exports = (grunt)->
     dist: 'htdocs'
     port: '8510'
     type: 'kojin'
-    #port: '10004'
+    #type: 'business'
+
   }
 
   grunt.initConfig

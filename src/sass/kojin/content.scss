@@ -11,27 +11,33 @@
 
 
 body.local-page .content-wrapper {
-	margin-top: 50px;
+	margin-top: 30px;
 	max-width: $content_w;
 	@include centering;
 }
 #local-content {
 	max-width: 700px;
 	margin-left: 250px;
-	min-height: 500px;
+	min-height: 600px;
 	@include mq-default {
 		padding-right: 10px;
 	}
 	@include mq-sp {
 		width: 90%;
-		margin-top: 70px;
+		margin-top: 20px;
 		@include centering;
 	}
 	@include mq-tablet {
 		width: 90%;
-		margin-top: 70px;
+		margin-top: 20px;
 		@include centering;
 	}
+}
+
+#page-container.popup-page .header-wrapper,
+#page-container.popup-page .content-wrapper {
+	width: 90%;
+	@include centering;
 }
 
 /************************************************************************************************
@@ -123,7 +129,7 @@ body.local-page .content-wrapper {
 
 p {
 	font-size: $font-def;
-	line-height: 1.85em;
+	line-height: 1.75em;
 }
 
 
@@ -143,6 +149,7 @@ p {
 		font-weight: bold;
 		line-height: 1.2em;
 		background: url(img/arrow_a.png) no-repeat 5px center;
+		background: url(img/arrow_a_s.png) no-repeat 5px center\9;
 		padding-left: 24px;
 		@include background-size(12px,12px);
 	}
@@ -155,7 +162,7 @@ p {
 
 //Table
 .table-wrapper {
-	border: 3px solid #e6e6e6;
+	border: 1px solid #333;
 }
 
 .table-style1 {
@@ -166,20 +173,22 @@ p {
 	th {
 		padding: 6px;
 		font-weight: normal;
-		border-right: 1px solid #ddd;
-		border-bottom: 1px solid #ddd;
+		border-right: 1px solid #333;
+		border-bottom: 1px solid #333;
 		width: 200px;
 		text-align: center;
-		text-align: left;
-		background: #f0f7f5;
+		background: #f7c669;
 	}
-
+	th.light {
+		color: #000 !important;
+		background: #f7c669 !important;
+	}
 	td {
 		text-align: right;
 		padding: 6px;
-		border-bottom: 1px solid #ddd;
-		border-right: 1px solid #ddd;
-		background: #fff;
+		border-bottom: 1px solid #333;
+		border-right: 1px solid #333;
+		background: #faf5cb;
 	}
 	th:last-child,
 	td:last-child {
@@ -187,14 +196,26 @@ p {
 	}
 	tr:first-child {
 		th {
-			color: #127059;
-			background: #b5dad1;
+			color: #000;
+			background: #f7c669;
 		}
 	}
 	tr:last-child {
 		th,td {
 			border-bottom: none;
 		}
+	}
+	th.em-t,td.em-t {
+		border-top: 1px solid $col_table_em;
+	}
+	th.em-l,td.em-l {
+		border-left: 1px solid $col_table_em;
+	}
+	th.em-r,td.em-r {
+		border-right: 1px solid $col_table_em;
+	}
+	th.em-b, td.em-b {
+		border-bottom: 1px solid $col_table_em;
 	}
 }
 
@@ -211,17 +232,31 @@ input,textarea {
 
 //Arrows
 .arrow-a {
+	padding-left: 18px;
+	background: url(img/arrow_a.png) left center no-repeat;
+	background: url(img/arrow_a_s.png) no-repeat 5px center\9;
+	@include background-size(12px, 12px);
 
 }
 .arrow-a-r {
 	padding-right: 18px;
 	background: url(img/arrow_a.png) right center no-repeat;
+	background: url(img/arrow_a_s.png) no-repeat right center\9;
 	@include background-size(12px,12px);
 
 }
 .arrow-top {
 	padding-right: 18px;
-	background: url(img/arrow_top.gif) right center no-repeat;
+	background: url(img/arrow_top.png) right center no-repeat;
+	background: url(img/arrow_top_s.png) right center no-repeat\9;
+	@include background-size(12px, 12px);
+}
+
+.arrow-btm {
+	padding-left: 18px;
+	background: url(img/arrow_btm.png) left center no-repeat;
+	background: url(img/arrow_btm_s.png) left center no-repeat\9;
+	@include background-size(12px, 12px);
 }
 
 //Mat
@@ -236,9 +271,19 @@ input,textarea {
 	li {
 		list-style-type: none;
 		margin-bottom: 10px;
+		@include link-reverse;
+		line-height: 1.5em;
 	}
 }
+.list-decimal {
+	margin:20px 0 0 20px;
+	padding: 0;
 
+	li {
+		list-style-type: decimal;
+		margin-bottom: 5px;
+	}
+}
 .list-il {
 	margin: 0;
 	padding: 0;
@@ -324,6 +369,13 @@ input,textarea {
 //round
 .round-a {
 	@include border-radius(5px);
+}
+
+hr {
+	background: #ccc;
+	border: none;
+	height: 1px;
+	margin: 20px 0;
 }
 
 /************************************************************************************************
@@ -629,7 +681,9 @@ header#sp-header {
 				padding: 8px 0 8px 30px;
 				background: url(img/sp_arrow_a.png) no-repeat 10px center $col_key_light2;
 				@include background-size(14px,13px);
-
+				a {
+					display: block;
+				}
 
 			}
 			.activity {
@@ -686,6 +740,42 @@ header#sp-header {
 	}
 }
 
+.site-title {
+	margin: 30px auto;
+	max-width: 940px;
+	@include mq-tablet {
+		margin-top: 75px;
+	}
+	@include mq-sp {
+		margin-top: 75px;
+	}
+	.inner {
+		@include border-radius(5px);
+		background: $col_key_light2;
+		text-align: center;
+		padding: 22px 10px;
+		.pc-title {
+			img {
+				max-width: 589px;
+				width: 100%;
+			}
+			@include mq-sp {
+				display: none;
+			}
+		}
+		.sp-title {
+			color: $col_key_dark2;
+			line-height: 1.5em;
+			@include font-p2;
+			font-weight: bold;
+			display: none;
+			@include mq-sp {
+				display: block;
+			}
+		}
+	}
+}
+
 //Content Nav **********************
 #content-nav {
 	@include mq-sp {
@@ -698,6 +788,7 @@ header#sp-header {
 	width: 190px;
 	margin-left: 10px;
 	position: absolute;
+	z-index: 100;
 	ul.main {
 		margin: 0;
 		padding: 0;
@@ -710,6 +801,7 @@ header#sp-header {
 				@include font-m1;
 				padding: 15px 0 15px 35px;
 				background: url(img/arrow_b.png) no-repeat 15px center;
+				background: url(img/arrow_b_s.png) no-repeat 15px center\9;
 				@include background-size(14px, 13px);
 				line-height: 1.2em;
 			}
@@ -724,6 +816,7 @@ header#sp-header {
 		margin: 20px 0 0 0;
 		padding: 0;
 		li {
+			margin-bottom: 5px;
 			list-style-type: none;
 		}
 	}
@@ -824,10 +917,9 @@ footer {
 	}
 	.phone {
 		font-weight: bold;
-		background: url(img/ic_freedial.png) no-repeat left center;
+		background: url(img/ic_freedial.png) no-repeat left top;
 		padding-left: 54px;
 		padding-bottom: 10px;
-		border-bottom: 1px dotted #ddd;
 		@include link-noeffect;
 		@include a-color($col_link);
 
@@ -840,11 +932,18 @@ footer {
 		}
 
 	}
+	.under {
+		margin-top: 10px;
+		border-top: 1px dotted #ccc;
+		padding-top: 10px;
+	}
 	.sp-phone {
 		@include link-noeffect;
 		@include a-color($col_link);
 
 		font-weight: bold;
+
+		padding-bottom: 10px;
 		.num {
 			color: $col_link;
 		}
@@ -859,26 +958,37 @@ footer {
 			padding: 10px 0;
 		}
 		.phone-close {
-			background-image: url(img/arrow_open.png)
+			background-image: url(img/arrow_open.png);
+			background-image: url(img/arrow_open_s.png)\9;
 		}
 	}
 	.fax {
-		margin-top: 10px;
+		margin-top: 0px;
 		font-weight: bold;
-		background: url(img/ic_fax.png) no-repeat left center;
+		background: url(img/ic_fax.png) no-repeat left top;
 		padding-left: 54px;
 		@include mq-sp {
 			background: none;
+			padding-top: 0;
 			padding-left: 0;
 		}
 	}
+	.tel-date {
+		line-height: 1.2em;
+		@include font-def;
+		@include mq-sp {
+			display: none;
+		}
+	}
 	.date {
-		@include font-p2;
+		margin-top: 15px;
+		@include font-def;
 		@include mq-tablet {
 			@include font-m1;
 		}
 		@include mq-sp {
 			@include font-m1;
+
 		}
 	}
 	.label {
@@ -892,14 +1002,29 @@ footer {
 
 		}
 	}
+	@include mq-sp {
+		.col-2 {
+			margin-top: 0
+		}
+	}
 }
 
 #local-content .phone-area {
 	width: 100%;
+	.fax {
+		.label {
+			@include font-m1;
+		}
+		.br {
+			display: inline-block;
+		}
+	}
+}
+/*#local-content .phone-area {
+	width: 100%;
 
 	&.under-page {
 		.row-2 {
-			border-bottom: 1px dotted #ddd;
 			@include mq-sp {
 				border-bottom: none;
 			}
@@ -911,7 +1036,11 @@ footer {
 			}
 		}
 		.fax {
-			margin-top: 0;
+			margin-top:0;
+			@include mq-sp {
+				padding-top: 10px;
+				border-top: 1px dotted #aaa;
+			}
 			.label {
 				@include font-m2;
 			}
@@ -920,6 +1049,9 @@ footer {
 				@include mq-sp {
 					@include font-p1;
 				}
+			}
+			@include mq-sp {
+				margin-top: -10px;
 			}
 		}
 		p {
@@ -938,7 +1070,7 @@ footer {
 			}
 		}
 	}
-}
+}*/
 
 /************************************************************************************************
 	Misc
@@ -975,10 +1107,33 @@ footer {
 	@include mq-sp {
 		padding: 10px;
 	}
-	.fig-inner {
-		@include border-radius(5px);
-		background: #fff;
+
+}
+
+.fig-inner {
+	@include border-radius(5px);
+	padding: 10px;
+	text-align: center;
+	background: #fff;
+
+	img {
+		width: 100%;
+		max-width: 580px;
 	}
+}
+.fig-inner2 {
+	img {
+		width: 100%;
+		max-width: 700px !important;
+	}
+	text-align: center;
+
+}
+
+
+.borderd-area {
+	padding: 10px;
+	border: 1px solid $col_border1;
 }
 
 .col-keydark {
@@ -993,8 +1148,9 @@ footer {
 	.main-text-area {
 
 		background: url(../../img/index_main_bg.jpg) repeat-x #ebf8f5;
-		height: 288px;
-		padding-top: 40px;
+		margin-top: 20px;
+		padding-top: 25px;
+		padding-bottom: 10px;
 		.text1 {
 			text-align: center;
 		}
@@ -1004,8 +1160,7 @@ footer {
 			padding: 2px;
 			color: #fff;
 			font-weight: bold;
-			line-height: 1.5em;
-			text-align: center;
+			line-height: 1.3em;
 			text-align: center;
 			@include font-p1;
 			@include centering;
@@ -1019,6 +1174,7 @@ footer {
 
 		}
 		@include mq-tablet {
+			margin-top: 40px;
 			.text1 img {
 				width: 80%;
 			}
@@ -1028,6 +1184,7 @@ footer {
 			}
 		}
 		@include mq-sp {
+			margin-top: 40px;
 			.text1 img {
 				width: 90%;
 			}
@@ -1038,7 +1195,12 @@ footer {
 		}
 	}
 	.sec01 {
-
+		.list-def {
+			margin: 10px;
+		}
+		.link-btn {
+			width: 90%;
+		}
 	}
 	.sec02 {
 		.list-def {
@@ -1146,6 +1308,14 @@ footer {
 	}
 }
 
+// 01 Goaisatsu *+************+************+************+************+***********
+#goaisatsu {
+	.fig01 {
+		max-width: 220px;
+		width: 100%;
+	}
+}
+
 // 02 Setsumei *+************+************+************+************+***********
 #setsumei {
 	.menu-sec01,
@@ -1169,8 +1339,26 @@ footer {
 	}
 }
 
+// 03 Tanka *+************+************+************+************+***********
+#tanka {
+	.anchor-link {
+		margin: 0;
+		padding: 0;
+		li {
+			list-style-type: none;
+			@include link-reverse;
+			@include font-m1;
+			margin-bottom: 5px;
+			margin-right: 8px;
+		}
+		li:last-child {
+			margin-right: 0;
+		}
+	}
+}
 
-// 03 Shitsumon *+************+************+************+************+***********
+
+// 04 Shitsumon *+************+************+************+************+***********
 .qa {
 	border: 1px solid #ddd;
 	@include border-radius(3px);
@@ -1198,17 +1386,72 @@ footer {
 	.answer {
 		display: none;
 		border-top: 1px solid #ddd;
-		@include font-m1;
 		margin: 0;
 		padding: 25px;
 	}
 	&.open h3 {
 		background: url(img/arrow_open.png) no-repeat right center;
+		background: url(img/arrow_open_s.png) no-repeat right center\9;
 		@include background-size(14px, 14px);
 	}
 	&.close h3 {
 		background: url(img/arrow_close.png) no-repeat right center;
+		background: url(img/arrow_close_s.png) no-repeat right center\9;
 		@include background-size(14px, 14px);
 	}
 
+}
+
+
+// 05 Setsuyaku *+************+************+************+************+***********
+#setsuyaku{
+	h3 {
+		color: $col_key;
+		background: none;
+		font-weight: bold;
+		line-height: 1.3em;
+		padding: 4px 0 10px 70px;
+		@include font-p3;
+		.sub {
+			@include font-m3;
+		}
+	}
+	.sec01 h3 {
+		background: url(../../setsuyaku/img/index_h301.gif) no-repeat left center;
+	}
+	.sec02 h3 {
+		background: url(../../setsuyaku/img/index_h302.gif) no-repeat left center;
+	}
+	 .label-bn {
+		display: inline-block;
+		background: $col_key;
+		color: #fff;
+		@include border-radius(5px);
+		padding: 2px 4px;
+		@include font-m2;
+	}
+}
+
+// 06 Simulation *+************+************+************+************+***********
+#simulation {
+	.caution {
+		.inner {
+			padding: 20px;
+		}
+		margin-top: 30px;
+		border: 1px solid #ddd;
+		h3 {
+			font-weight: bold;
+			background: #ffe036;
+			margin: 0;
+			line-height: 1.3em;
+		}
+		h4 {
+			margin: 0;
+			border-left: 5px solid #777;
+		}
+		p, li {
+			@include font-m1;
+		}
+	}
 }
