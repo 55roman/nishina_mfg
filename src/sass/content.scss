@@ -1,0 +1,52 @@
+body {
+	overflow: hidden;
+}
+#page-container {
+	position: absolute;
+	background: url(../../img/script_b.jpg) no-repeat center top ;
+	background-size: cover;
+}
+#nishina {
+	position: absolute;
+	top: 50%;
+	margin-top: -65px;
+	width: 130px;
+	left: 50%;
+	margin-left: -65px;
+}
+#knit {
+	position: absolute;
+	top: 50%;
+	margin-top: -65px;
+	width: 130px;
+	left: 50%;
+	margin-left: -65px;
+}
+#b-l,#b-r {
+
+	position: absolute;
+
+	text-align: center;
+	object {
+		z-index: 10;
+		display: inline-block;
+	}
+	.txt {
+		width: 100%;
+		font-size: 11px;
+		position: absolute;
+		top: 50%;
+		text-align: center;
+	}
+}
+
+#b-l {
+	&:hover {
+		background: rgba(255, 0, 139, 0.9);
+	}
+}
+#b-r {
+	&:hover {
+		background: rgba(255, 255, 255, 0.9);
+	}
+}

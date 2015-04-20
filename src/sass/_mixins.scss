@@ -1,0 +1,100 @@
+
+@import "vars";
+
+@mixin font-min {
+	font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+	font-weight: normal;
+}
+
+.font-min {
+	@include font-min;
+}
+
+
+
+@mixin fl {
+	float: left;
+}
+
+@mixin fr {
+	float: right;
+}
+
+@mixin centering {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@mixin right {
+	margin-left: auto;
+	margin-right: 0;
+}
+
+@mixin font-def {
+	font-size: $font-def;
+
+}
+
+@mixin font-m1 {
+	font-size: $font-m1;
+
+}
+
+@mixin font-m2 {
+	font-size: $font-m2;
+
+}
+
+@mixin font-m3 {
+	font-size: $font-m3;
+
+}
+
+@mixin font-p1 {
+	font-size: $font-p1;
+
+}
+
+@mixin font-p2 {
+	font-size: $font-p2;
+
+}
+
+@mixin font-p3 {
+	font-size: $font-p3;
+
+}
+
+@mixin link-reverse {
+	a {
+		&:link {
+			text-decoration: none;
+		}
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+@mixin link-noeffect {
+	a {
+		&:link {
+			text-decoration: none;
+		}
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+@mixin a-color($linkCol) {
+	a {
+		&:link,
+		&:hover,
+		&:visited,
+		&:active {
+			color: $linkCol;
+		}
+
+	}
+}

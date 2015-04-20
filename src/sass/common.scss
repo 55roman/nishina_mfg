@@ -1,0 +1,223 @@
+@import "vars";
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+
+.font-def {
+	font-size: $font-def !important;
+}
+
+.font-m1 {
+	font-size: $font-m1 !important;
+}
+
+.font-m2 {
+	font-size: $font-m2 !important;
+
+}
+
+.font-m3 {
+	font-size: $font-m3 !important;
+
+}
+
+.font-p1 {
+	font-size: $font-p1 !important;
+}
+
+.font-p2 {
+	font-size: $font-p2 !important;
+}
+
+.font-p3 {
+	font-size: $font-p3 !important;
+}
+
+.lh-12 {
+	line-height: 1.2em;
+}
+
+.lh-13 {
+	line-height: 1.3em;
+}
+
+.lh-14 {
+	line-height: 1.4em;
+}
+
+.lh-15 {
+	line-height: 1.5em;
+}
+
+.lh-17 {
+	line-height: 1.75em;
+}
+
+.lh-18 {
+	line-height: 1.8em;
+}
+
+.lh-20 {
+	line-height: 2em;
+}
+
+
+
+/* //////////////////////////////////////////////////////////// anchor */
+
+a:link,
+a:visited,
+a:active {
+	color: #333;
+}
+
+a:link {
+	text-decoration: underline;
+}
+
+a:hover, a:active {
+	color: #999;
+	text-decoration: none;
+}
+
+
+
+/* //////////////////////////////////////////////////////////// fontsize */
+
+p, li, dt, dd, th, td {
+	line-height:1.6em;
+
+}
+p, h1, h2, h3, h4, li{
+	font-weight: normal;
+}
+p {
+	margin-bottom: 0.75em;
+}
+
+/* //////////////////////////////////////////////////////////// Base */
+
+/*li {
+	float:left;
+}*/
+
+img {
+	vertical-align:top;
+}
+ul li img,
+dl dt img,
+dl dd img{
+	vertical-align:bottom;
+}
+
+object {
+	vertical-align:top;
+}
+
+
+
+/* //////////////////////////////////////////////////////////// HHH */
+
+$mspan: 5;
+
+@for $i from 0 through 30 {
+
+	.mt#{$i*$mspan} {
+		margin-top: #{$mspan*$i}px !important;
+	}
+}
+
+@for $j from 0 through 30 {
+
+	.mb#{$j*$mspan} {
+		margin-bottom: #{$mspan*$j}px !important;
+	}
+}
+
+@for $k from 0 through 20 {
+
+	.mr#{$k*$mspan} {
+		margin-right: #{$mspan*$k}px !important;
+	}
+}
+
+@for $l from 0 through 20 {
+
+	.ml#{$l*$mspan} {
+		margin-left: #{$mspan*$l}px !important;
+	}
+}
+
+@for $i from 0 through 20 {
+
+	.pt#{$i*$mspan} {
+		padding-top: #{$mspan*$i}px !important;
+	}
+}
+
+@for $i from 0 through 20 {
+
+	.pb#{$i*$mspan} {
+		padding-bottom: #{$mspan*$i}px !important;
+	}
+}
+
+@for $i from 0 through 20 {
+
+	.pr#{$i*$mspan} {
+		padding-right: #{$mspan*$i}px !important;
+	}
+}
+
+@for $i from 0 through 20 {
+
+	.pl#{$i*$mspan} {
+		padding-left: #{$mspan*$i}px !important;
+	}
+}
+
+/* //////////////////////////////////////////////////////////// Utility */
+/* = Selected Text */
+
+
+::selection {
+	background: $col_key_light2;
+	/* Safari */
+}
+
+::-moz-selection {
+	background: $col_key_light2;
+}
+
+.notice {
+	color: #ff0000;
+}
+
+.error {
+	color: #ff0000;
+}
+
+.text-r {
+	text-align: right !important;
+}
+
+.text-l {
+	text-align: left !important;
+}
+
+.text-c {
+	text-align: center !important;
+}
+
+strong {
+	font-weight: bold;
+}
+
+.indent {
+	padding-left: 1em;
+	text-indent: -1em;
+}
